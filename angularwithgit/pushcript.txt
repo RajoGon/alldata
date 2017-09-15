@@ -1,0 +1,14 @@
+git add dist
+git commit -m""
+git subtree push --prefix=dist origin gh-pages
+
+
+
+ <base href="./iwantit/">
+
+
+  imports:      [ BrowserModule,FormsModule,HttpModule,RouterModule.forRoot([
+                                                                  {path: '', component: HomeComponent},
+                                                                  {path: 'myaccount', component: MyAccountComponent},
+                                                                  {path: 'productview', component: ProductViewComponent}
+                                                                  ])
